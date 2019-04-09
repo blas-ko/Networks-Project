@@ -156,15 +156,15 @@ def calculate_everything(G, rounds=20, graphs=True, τ=10):
         if not(nx.is_directed(G)):
             draw_community_over_time( resolution, vi, num_comms)
             plt.tight_layout()
-#             plt.savefig('./media/comm_dynamics_standard.png')
+            plt.savefig('../media/comm_dynamics_standard.png')
 
         draw_community_over_time( resolution_RBS, vi_RBS, num_comms_RBS)
         plt.tight_layout()
-#         plt.savefig('./media/comm_dynamics_RBS.png')
+        plt.savefig('../media/comm_dynamics_RBS.png')
 
         draw_community_over_time( resolution_DES, vi_DES, num_comms_DES)
         plt.tight_layout()
-#         plt.savefig('./media/comm_dynamics_DES.png')
+        plt.savefig('../media/comm_dynamics_DES.png')
 
     # Ask for resolution and plot the others.
 
